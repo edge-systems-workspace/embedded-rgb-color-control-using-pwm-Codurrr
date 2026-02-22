@@ -13,7 +13,13 @@ int BLUE_pin = 11;
 
 
 void setup() {
+    Serial.begin(9600);
 
+    pinMode(RED_pin, OUTPUT);
+    pinMode(GREEN_pin, OUTPUT);
+    pinMode(BLUE_pin, OUTPUT);
+
+    Serial.println("RGB LED Initialized!");
 }
 
 void loop() {
